@@ -25,5 +25,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: NetBlox-Playable-Game
-        path: |
-          **/bin/Debug/net8.0/*
+        path: .
+          
