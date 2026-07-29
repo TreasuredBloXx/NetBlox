@@ -19,6 +19,7 @@ jobs:
       with:
         name: NetBlox-Playable-Game
         path: |
-          UniversalClient/bin/Release/net8.0/*
-          UniversalServer/bin/Release/net8.0/*
+        UniversalClient/bin/Release/net8.0/*    
+        UniversalServer/bin/Release/net8.0/*
+
           
