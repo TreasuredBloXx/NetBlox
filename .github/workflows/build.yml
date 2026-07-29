@@ -1,0 +1,29 @@
+name: Build Playable Game
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout Source Code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Compile C# to Playable EXE
+      run: dotnet build --configuration Release
+
+    - name: Package Your Playable Game Folder
+      uses: actions/upload-artifact@v4
+      with:
+        name: NetBlox-Playable-Game
+        path: |
+          **/bin/Release/net8.0/*
