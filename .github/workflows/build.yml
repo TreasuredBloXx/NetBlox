@@ -18,8 +18,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: NetBlox-Playable-Game
-        path: |
-        UniversalClient/bin/Release/net8.0/*    
-        UniversalServer/bin/Release/net8.0/*
+        path: .
+
 
           
