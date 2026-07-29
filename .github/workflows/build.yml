@@ -26,4 +26,4 @@ jobs:
       with:
         name: NetBlox-Playable-Game
         path: |
-          **/bin/Release/net8.0/*
+          **/bin/Debug/net8.0/*
